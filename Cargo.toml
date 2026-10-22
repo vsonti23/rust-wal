@@ -1,0 +1,23 @@
+[package]
+name = "rust-wal"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["Varshik Sonti <varshiksonti@gmail.com>"]
+description = "A segmented, checksummed write-ahead log with crash recovery and configurable durability."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/vsonti23/rust-wal"
+keywords = ["wal", "write-ahead-log", "storage", "durability", "database"]
+categories = ["database-implementations", "filesystem"]
+publish = false
+
+[lib]
+name = "rust_wal"
+
+[dependencies]
+crc32fast = "1.4"
+thiserror = "2"
+
+[dev-dependencies]
+tempfile = "3"
